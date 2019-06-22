@@ -10,3 +10,7 @@ cd FRS-Transceiver/
 
 git pull
 
+## Links
+https://github.com/Nuand/bladeRF/wiki/Getting-Started:-Verifying-Basic-Device-Operation
+
+
