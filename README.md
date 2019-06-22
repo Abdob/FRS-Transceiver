@@ -13,4 +13,5 @@ git pull
 ## Links
 https://github.com/Nuand/bladeRF/wiki/Getting-Started:-Verifying-Basic-Device-Operation
 
+https://github.com/Nuand/bladeRF/wiki/Gnuradio-OsmoSDR-device-string-options
 
