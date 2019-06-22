@@ -1,5 +1,4 @@
-# FRS-Tramsceiver
-
+# FRS-Transceiver
 Repository contains GRC and Matlab Directories.
 
 ## Cloning
