@@ -30,6 +30,4 @@ https://github.com/Nuand/bladeRF/wiki/Getting-Started:-Verifying-Basic-Device-Op
 
 https://github.com/Nuand/bladeRF/wiki/Gnuradio-OsmoSDR-device-string-options
 
-https://github.com/Nuand/bladeRF/issues/729
-
 https://github.com/Nuand/bladeRF/tree/dev-hdl-rx-fifo-fixes
