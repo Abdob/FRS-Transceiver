@@ -21,9 +21,9 @@ The pulse is generated and a sequence of alternating pulses from positive to neg
 
 ## Examining single and dual rx
 
-![GitHub Logo](/Diagrams/singleRX_1.jpg)
+![GitHub Logo](/Diagrams/single_RX1.jpg)
 
-![GitHub Logo](/Diagrams/dualRX_1.jpg)
+![GitHub Logo](/Diagrams/dual_RX1.jpg)
 
 ## Links
 https://github.com/Nuand/bladeRF/wiki/Getting-Started:-Verifying-Basic-Device-Operation
