@@ -25,6 +25,12 @@ The pulse is generated and a sequence of alternating pulses from positive to neg
 
 ![GitHub Logo](/Diagrams/dual_RX1.jpg)
 
+## Notes
+
+When building gr-osmosdr rx/tx source block, cmake looks for the bladerf library: libbladeRF.so
+
+Found libbladeRF: /usr/include, /usr/lib/x86_64-linux-gnu/libbladeRF.so
+
 ## Links
 https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux
 
