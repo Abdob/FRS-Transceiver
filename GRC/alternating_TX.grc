@@ -128,7 +128,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>C:\Users\Jevin\Documents\SDR\FRS-Transceiver\GRC\alternating.dat</value>
+      <value>/home/foci1/Documents/SDR/FRS-Transceiver/GRC/alternating.dat</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -318,7 +318,7 @@
     </param>
     <param>
       <key>rf_freq</key>
-      <value>2100000</value>
+      <value>2100000000</value>
     </param>
     <param>
       <key>samp_rate</key>
@@ -638,6 +638,10 @@
     <param>
       <key>srate</key>
       <value>samp_rate</value>
+    </param>
+    <param>
+      <key>stemplot</key>
+      <value>False</value>
     </param>
     <param>
       <key>tr_chan</key>
