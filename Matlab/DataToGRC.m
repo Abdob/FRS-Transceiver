@@ -10,6 +10,12 @@ function [] = DataToGRC(filename, data, type)
         case 'single'
             data = single(data);
             fwrite (f, data , 'float');
+        case 'complex'
+            % interleave real and imaginary
+            rdata = upsample(real(data),2);
+            idata = upsample(imag(data),2);
+            data = rdata + [0 idata(1:end-1)];
+            fwrite (f, data , 'float');
     end  
     fclose (f);
     
