@@ -26,6 +26,8 @@ The pulse is generated and a sequence of alternating pulses from positive to neg
 ![GitHub Logo](/Diagrams/dual_RX1.jpg)
 
 ## Links
+https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux
+
 https://github.com/Nuand/bladeRF/wiki/Getting-Started:-Verifying-Basic-Device-Operation
 
 https://github.com/Nuand/bladeRF/wiki/Gnuradio-OsmoSDR-device-string-options
