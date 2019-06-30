@@ -27,7 +27,7 @@ The pulse is generated and a sequence of alternating pulses from positive to neg
 
 ## BladeRF RX Source Internal
 
-![GitHub Logo]('/Diagrams/BladeRF_RX.jpg')
+![GitHub Logo](/Diagrams/BladeRF_RX.jpg)
 
 ## Notes
 
