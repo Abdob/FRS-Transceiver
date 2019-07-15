@@ -29,6 +29,27 @@ The pulse is generated and a sequence of alternating pulses from positive to neg
 
 ![GitHub Logo](/Diagrams/BladeRF_RX.jpg)
 
+## Building libbladerf from source
+
+If bladeRF was installed with sudo apt-get uninstall it with the following command:
+
+sudo apt-get remove bladerf
+
+sudo apt-get remove libbladerf-dev
+
+Ensure the bladeRF library isn't in the system:
+
+sudo find / -name "libbladeRF.so"
+
+Go to the step where the dependencies are installed then the step to build libbladerf from source:
+
+https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux
+
+
+
+
+
+
 ## Notes
 
 When building gr-osmosdr rx/tx source block, cmake looks for the bladerf library: libbladeRF.so
@@ -36,7 +57,6 @@ When building gr-osmosdr rx/tx source block, cmake looks for the bladerf library
 Found libbladeRF: /usr/include, /usr/lib/x86_64-linux-gnu/libbladeRF.so
 
 ## Links
-https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux
 
 https://github.com/Nuand/bladeRF/wiki/Getting-Started:-Verifying-Basic-Device-Operation
 
