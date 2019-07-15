@@ -47,7 +47,7 @@ https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux
 
 ## Building osmosdr from source
 
-When building gr-osmosdr rx/tx source block, cmake looks for the bladerf library: libbladeRF.so. BladeRF library is build prior to osmosdr. The source code which interfaces osmosdr with the bladerf library is the gr-osmosdr/lib/bladerf directory. The directory contains an api with functions to access and control the bladerf. This source code can be changed and compiled if needed. 
+When building gr-osmosdr rx/tx source block, cmake looks for the bladerf library: libbladeRF.so. BladeRF library is build prior to osmosdr. The source code which interfaces osmosdr with the bladerf library is in the gr-osmosdr/lib/bladerf directory. The directory contains an api with functions to access and control the bladerf. This source code can be changed and compiled if needed. 
 
 https://github.com/osmocom/gr-osmosdr
 
