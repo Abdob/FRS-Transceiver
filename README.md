@@ -51,6 +51,19 @@ When building gr-osmosdr rx/tx source block, cmake looks for the bladerf library
 
 https://github.com/osmocom/gr-osmosdr
 
+When running the GRC application with the osmosdr source block, debugging information from gr-osmosdr/lib/bladerf/bladerf_source_c.cc and bladerf_common.cc as shown below. bladerf_source_c.cc has been slight modified and includes a print statement for configuring each channel.
+
+[bladeRF common] bladerf_source_c: Configuring Channel: 0
+[bladeRF common] bladerf_source_c: Configuring Channel: 1
+[bladeRF common] init: DEBUG: entering initialization
+[bladeRF source] init: Opening Nuand bladeRF with device identifier string '*:instance=0'
+[bladeRF source] Device: Nuand bladeRF 2.0 Serial # 3519...74df FW v2.3.2 FPGA v0.10.2
+[bladeRF source] init: Buffers: 512, samples per buffer: 4096, active transfers: 32
+[bladeRF source] bladerf_source_c: DEBUG: initialization complete
+[bladeRF source] start: DEBUG: starting source
+[bladeRF source] stop: DEBUG: stopping source
+
+
 
 ## Other Links
 
