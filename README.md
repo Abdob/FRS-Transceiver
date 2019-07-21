@@ -71,6 +71,30 @@ When running the GRC application with the osmosdr source block, debugging inform
 
 [bladeRF source] stop: DEBUG: stopping source
 
+## Bypassing osmo-sdr for trouble-shooting
+
+To Rule out the issue is in osmo-sdr, we bypass this block and analyze what would be received from the libbladeRF library.
+
+Enter the bladeRF command line interface:
+
+bladeRF-cli -i
+
+View your radio's configuration and set frequency and sample rate to match the trasnmitter.
+
+print
+
+set frequency 2100000000
+
+set samplerate 2000000
+
+Capture samples from your transmitting radio:
+
+rx config file=samples.csv format=csv n=4M
+
+rx start
+
+https://github.com/Nuand/bladeRF/tree/master/host/utilities/bladeRF-cli
+
 
 
 ## Other Links
