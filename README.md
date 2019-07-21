@@ -119,6 +119,20 @@ Now col1 and col2 are of type 'double', plot them (500 samples) using:
 
 ![GitHub Logo](/Diagrams/bladeRF_Single_RX.jpg)
 
+Now with the bladeRF set to the frequency and sample rate in the bladeRF-cli program as described above, configure the bladeRF to mimo and collect the samples again (in the same procedure as above there is an external radio transmitting the alternating pulses):
+
+rx config file=mimo.csv format=csv n=32768 channel=1,2
+
+rx start
+
+The mimo.csv file containing the samples are produced and plotted in Matlab again:
+
+
+
+
+
+
+
 
 https://github.com/Nuand/bladeRF/tree/master/host/utilities/bladeRF-cli
 
