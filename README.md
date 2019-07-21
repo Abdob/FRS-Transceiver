@@ -125,7 +125,7 @@ rx config file=mimo.csv format=csv n=32768 channel=1,2
 
 rx start
 
-The mimo.csv file containing the samples are produced and ported to Matlab, this time you will see the table data containing four columns as opposed to two as before. This is due to having two receive ports each containing inphase and quadrature component totaling to four total components. Ploting this in Matlab again:
+The mimo.csv file containing the samples are produced and ported to Matlab, this time you will see the table data containing four columns as opposed to two as before. This is due to having two receive ports each containing inphase and quadrature component totaling to four total components. We are ploting channel 1 output in Matlab again:
 
 >> col1 = mimo{:,1};
 
