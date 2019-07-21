@@ -125,8 +125,29 @@ rx config file=mimo.csv format=csv n=32768 channel=1,2
 
 rx start
 
-The mimo.csv file containing the samples are produced and plotted in Matlab again:
+The mimo.csv file containing the samples are produced and ported to Matlab, this time you will see the table data containing four columns as opposed to two as before. This is due to having two receive ports each containing inphase and quadrature component totaling to four total components. Ploting this in Matlab again:
 
+>> col1 = mimo{:,1};
+
+>> col2 = mimo{:,2};
+
+>> col3 = mimo{:,3};
+
+>> col4 = mimo{:,4};
+
+>> subplot(211)
+
+>> plot(col1(7000:7500))
+
+>> title('rx config file=mimo.csv format=csv n=32768 channel=1,2')
+
+>> subplot(212)
+
+>> plot(col2(7000:7500))
+
+>> title('Channel 1: Quadrature component')
+
+![GitHub Logo](/Diagrams/bladeRF_Multiple_RX.jpg)
 
 
 
