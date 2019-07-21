@@ -79,7 +79,7 @@ Enter the bladeRF command line interface:
 
 bladeRF-cli -i
 
-View your radio's configuration and set frequency and sample rate to match the trasnmitter.
+View your radio's configuration and set frequency and sample rate to match the trasnmitter:
 
 print
 
@@ -92,6 +92,33 @@ Capture samples from your transmitting radio:
 rx config file=samples.csv format=csv n=4M
 
 rx start
+
+On Matlab Right Click on the samples.csv file and use the Import Data tool. You will get table data named 'samples'. Verify this by typing this on Matlab:
+
+>> class(samples)
+
+Extract the first column and the second column of the table data which are your inphase component and the quadrature component of your received data respectively:
+
+>> col1 = samples{:,1};
+
+>> col2 = samples{:,2};
+
+Now col1 and col2 are of type 'double', plot them (500 samples) using:
+
+>> subplot(211)
+
+>> plot(col1(4500:5000))
+
+>> title('rx config file=samples.csv format=csv n=4M')
+
+>> subplot(212)
+
+>> plot(col2(4500:5000))
+
+>> title('Quadrature component')
+
+![GitHub Logo](/Diagrams/bladeRF_Single_RX.jpg)
+
 
 https://github.com/Nuand/bladeRF/tree/master/host/utilities/bladeRF-cli
 
