@@ -64,10 +64,11 @@ The mimo.csv file containing the samples are produced and ported to Matlab, this
 Run Matlab script 'ExamineAlternating.m'
 
 
-![GitHub Logo](/Diagrams/bladeRF_Single_RX.jpg)
+![GitHub Logo](/Diagrams/GRC_Single_RX_Windows.jpg)
 
-![GitHub Logo](/Diagrams/bladeRF_Multiple_RX.jpg)
+![GitHub Logo](/Diagrams/GRC_dual_RX1_Windows.jpg)
 
+![GitHub Logo](/Diagrams/GRC_dual_RX2_Windows.jpg)
 
 ## Building libbladerf from source
 
