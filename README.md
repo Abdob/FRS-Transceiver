@@ -19,15 +19,21 @@ The pulse is generated and a sequence of alternating pulses from positive to neg
 
 ![GitHub Logo](/Diagrams/Sequence.jpg)
 
+## BladeRF RX Source Internal
+
+![GitHub Logo](/Diagrams/BladeRF_RX.jpg)
+
+## Trouble Shooting Inital Setup
+
+![GitHub Logo](/Diagrams/Initial_troubleshooting_setup.jpg)
+
 ## Examining single and dual rx
 
 ![GitHub Logo](/Diagrams/single_RX1.jpg)
 
 ![GitHub Logo](/Diagrams/dual_RX1.jpg)
 
-## BladeRF RX Source Internal
 
-![GitHub Logo](/Diagrams/BladeRF_RX.jpg)
 
 ## Building libbladerf from source
 
