@@ -70,6 +70,14 @@ Run Matlab script 'ExamineAlternating.m'
 
 ![GitHub Logo](/Diagrams/GRC_dual_RX2_Windows.jpg)
 
+![GitHub Logo](/Diagrams/CLI_Single_RX_Windows.jpg)
+
+![GitHub Logo](/Diagrams/CLI_dual_RX1_Windows.jpg)
+
+![GitHub Logo](/Diagrams/CLI_dual_RX2_Windows.jpg)
+
+
+
 ## Building libbladerf from source
 
 If bladeRF was installed with sudo apt-get, uninstall it with the following command:
