@@ -27,20 +27,11 @@ The pulse is generated and a sequence of alternating pulses from positive to neg
 
 ![GitHub Logo](/Diagrams/Initial_troubleshooting_setup.jpg)
 
-## Examining single and dual rx
+## Examining single and dual rx in Windows
 
-![GitHub Logo](/Diagrams/single_RX1.jpg)
+Running the grc flowcharts applications single_RX and dual_RX we capture the samples stored in single_RX_1.dat, dual_RX_1.dat and dual_RX_2.dat, these are plotted below along with samples captured outside of GRC.
 
-![GitHub Logo](/Diagrams/dual_RX1.jpg)
-
-
-
-
-## Bypassing osmo-sdr for trouble-shooting
-
-To Rule out the issue is in osmo-sdr, we bypass this block and analyze what would be received from the libbladeRF library.
-
-Enter the bladeRF command line interface:
+To bypass GRC enter the bladeRF command line interface:
 
 bladeRF-cli -i
 
@@ -54,30 +45,26 @@ set samplerate 2000000
 
 set bandwidth 56000000
 
-Capture samples from your transmitting radio:
+Capture samples from your transmitting radio in Single RX mode:
 
 rx config file=single.csv format=csv n=4K
 
 rx start
 
-On Matlab Right Click on the samples.csv file and use the Import Data tool. You will get table data named 'samples'. Verify this by typing this on Matlab:
-
-
-Extract the first column and the second column of the table data which are your inphase component and the quadrature component of your received data respectively:
-
-
-Now col1 and col2 are of type 'double', plot them (500 samples) using:
-
-![GitHub Logo](/Diagrams/bladeRF_Single_RX.jpg)
-
-Now with the bladeRF set to the frequency and sample rate in the bladeRF-cli program as described above, configure the bladeRF to mimo and collect the samples again (in the same procedure as above there is an external radio transmitting the alternating pulses):
+Now with the bladeRF set to the same frequency, sample rate and bandwidth in the bladeRF-cli program as described above, configure the bladeRF to mimo and collect the samples again (in the same procedure as above there is an external radio transmitting the alternating pulses):
 
 rx config file=dual.csv format=csv n=4K channel=1,2
 
 rx start
 
+On Matlab Right Click on the produced files single.csv and dual.csv file and use the Import Data tool. You will get table data named 'single'and dual.
+
 The mimo.csv file containing the samples are produced and ported to Matlab, this time you will see the table data containing four columns as opposed to two as before. This is due to having two receive ports each containing inphase and quadrature component totaling to four total components. We are ploting channel 1 output in Matlab again:
 
+Run Matlab script 'ExamineAlternating.m'
+
+
+![GitHub Logo](/Diagrams/bladeRF_Single_RX.jpg)
 
 ![GitHub Logo](/Diagrams/bladeRF_Multiple_RX.jpg)
 
