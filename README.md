@@ -93,9 +93,11 @@ set frequency 2100000000
 
 set samplerate 2000000
 
+set bandwidth 56000000
+
 Capture samples from your transmitting radio:
 
-rx config file=samples.csv format=csv n=4M
+rx config file=single.csv format=csv n=4K
 
 rx start
 
