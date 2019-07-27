@@ -53,7 +53,7 @@ rx start
 
 Now with the bladeRF set to the same frequency, sample rate and bandwidth in the bladeRF-cli program as described above, configure the bladeRF to mimo and collect the samples again (in the same procedure as above there is an external radio transmitting the alternating pulses):
 
-rx config file=dual.csv format=csv n=4K channel=1,2
+rx config file=dual.csv format=csv n=8K channel=1,2
 
 rx start
 
