@@ -19,15 +19,68 @@ The pulse is generated and a sequence of alternating pulses from positive to neg
 
 ![GitHub Logo](/Diagrams/Sequence.jpg)
 
+## BladeRF RX Source Internal
+
+![GitHub Logo](/Diagrams/BladeRF_RX.jpg)
+
+## Trouble Shooting Inital Setup
+
+![GitHub Logo](/Diagrams/Initial_troubleshooting_setup.jpg)
+
 ## Examining single and dual rx
 
 ![GitHub Logo](/Diagrams/single_RX1.jpg)
 
 ![GitHub Logo](/Diagrams/dual_RX1.jpg)
 
-## BladeRF RX Source Internal
 
-![GitHub Logo](/Diagrams/BladeRF_RX.jpg)
+
+
+## Bypassing osmo-sdr for trouble-shooting
+
+To Rule out the issue is in osmo-sdr, we bypass this block and analyze what would be received from the libbladeRF library.
+
+Enter the bladeRF command line interface:
+
+bladeRF-cli -i
+
+View your radio's configuration and set frequency and sample rate to match the trasnmitter:
+
+print
+
+set frequency 2100000000
+
+set samplerate 2000000
+
+set bandwidth 56000000
+
+Capture samples from your transmitting radio:
+
+rx config file=single.csv format=csv n=4K
+
+rx start
+
+On Matlab Right Click on the samples.csv file and use the Import Data tool. You will get table data named 'samples'. Verify this by typing this on Matlab:
+
+
+Extract the first column and the second column of the table data which are your inphase component and the quadrature component of your received data respectively:
+
+
+Now col1 and col2 are of type 'double', plot them (500 samples) using:
+
+![GitHub Logo](/Diagrams/bladeRF_Single_RX.jpg)
+
+Now with the bladeRF set to the frequency and sample rate in the bladeRF-cli program as described above, configure the bladeRF to mimo and collect the samples again (in the same procedure as above there is an external radio transmitting the alternating pulses):
+
+rx config file=dual.csv format=csv n=4K channel=1,2
+
+rx start
+
+The mimo.csv file containing the samples are produced and ported to Matlab, this time you will see the table data containing four columns as opposed to two as before. This is due to having two receive ports each containing inphase and quadrature component totaling to four total components. We are ploting channel 1 output in Matlab again:
+
+
+![GitHub Logo](/Diagrams/bladeRF_Multiple_RX.jpg)
+
 
 ## Building libbladerf from source
 
@@ -70,86 +123,6 @@ When running the GRC application with the osmosdr source block, debugging inform
 [bladeRF source] start: DEBUG: starting source
 
 [bladeRF source] stop: DEBUG: stopping source
-
-## Bypassing osmo-sdr for trouble-shooting
-
-To Rule out the issue is in osmo-sdr, we bypass this block and analyze what would be received from the libbladeRF library.
-
-Enter the bladeRF command line interface:
-
-bladeRF-cli -i
-
-View your radio's configuration and set frequency and sample rate to match the trasnmitter:
-
-print
-
-set frequency 2100000000
-
-set samplerate 2000000
-
-Capture samples from your transmitting radio:
-
-rx config file=samples.csv format=csv n=4M
-
-rx start
-
-On Matlab Right Click on the samples.csv file and use the Import Data tool. You will get table data named 'samples'. Verify this by typing this on Matlab:
-
->> class(samples)
-
-Extract the first column and the second column of the table data which are your inphase component and the quadrature component of your received data respectively:
-
->> col1 = samples{:,1};
-
->> col2 = samples{:,2};
-
-Now col1 and col2 are of type 'double', plot them (500 samples) using:
-
->> subplot(211)
-
->> plot(col1(4500:5000))
-
->> title('rx config file=samples.csv format=csv n=4M')
-
->> subplot(212)
-
->> plot(col2(4500:5000))
-
->> title('Quadrature component')
-
-![GitHub Logo](/Diagrams/bladeRF_Single_RX.jpg)
-
-Now with the bladeRF set to the frequency and sample rate in the bladeRF-cli program as described above, configure the bladeRF to mimo and collect the samples again (in the same procedure as above there is an external radio transmitting the alternating pulses):
-
-rx config file=mimo.csv format=csv n=32768 channel=1,2
-
-rx start
-
-The mimo.csv file containing the samples are produced and ported to Matlab, this time you will see the table data containing four columns as opposed to two as before. This is due to having two receive ports each containing inphase and quadrature component totaling to four total components. We are ploting channel 1 output in Matlab again:
-
->> col1 = mimo{:,1};
-
->> col2 = mimo{:,2};
-
->> col3 = mimo{:,3};
-
->> col4 = mimo{:,4};
-
->> subplot(211)
-
->> plot(col1(7000:7500))
-
->> title('rx config file=mimo.csv format=csv n=32768 channel=1,2')
-
->> subplot(212)
-
->> plot(col2(7000:7500))
-
->> title('Channel 1: Quadrature component')
-
-![GitHub Logo](/Diagrams/bladeRF_Multiple_RX.jpg)
-
-
 
 
 
