@@ -116,6 +116,21 @@ sudo apt-get install bladerf
 
 sudo apt-get install libbladerf-dev
 
+## Examining single and dual rx in Linux
+
+Using the bladeRF-cli and GRC programs, gather the received data the same way done in the 'Examining single and dual rx in Windows' section.
+
+![GitHub Logo](/Diagrams/GRC_Single_RX_Linux.jpg)
+
+![GitHub Logo](/Diagrams/GRC_dual_RX1_Linux.jpg)
+
+![GitHub Logo](/Diagrams/GRC_dual_RX2_Linux.jpg)
+
+![GitHub Logo](/Diagrams/CLI_Single_RX_Linux.jpg)
+
+![GitHub Logo](/Diagrams/CLI_dual_RX1_Linux.jpg)
+
+![GitHub Logo](/Diagrams/CLI_dual_RX2_Linux.jpg)
 
 ## Building osmosdr from source
 
