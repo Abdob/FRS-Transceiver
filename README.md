@@ -78,7 +78,7 @@ Run Matlab script 'ExamineAlternating.m'
 
 
 
-## Building libbladerf from source
+## Building libbladerf from source --skip this (actually we are uninstalling libbladerf built from source and retesting the apt-get version)
 
 If bladeRF was installed with sudo apt-get, uninstall it with the following command:
 
@@ -88,11 +88,34 @@ sudo apt-get remove libbladerf-dev
 
 Ensure the bladeRF library isn't in the system:
 
-sudo find / -name "libbladeRF.so"
+ sudo apt-get install libbladerf-dev
 
 Go to the step where the dependencies are installed then the step to build libbladerf from source:
 
 https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux
+
+## If libbladerf was built from source uninstall it and reinstall using apt-get
+
+cd host/build
+
+sudo make uninstall 
+
+Make sure it is uninstalled:
+
+sudo apt-get install libbladerf-dev
+
+delete any libbladeRF.so library files found.
+
+Install from new:
+
+sudo add-apt-repository ppa:bladerf/bladerf
+
+sudo apt-get update
+
+sudo apt-get install bladerf
+
+sudo apt-get install libbladerf-dev
+
 
 ## Building osmosdr from source
 
