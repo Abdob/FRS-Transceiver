@@ -135,7 +135,7 @@ sudo apt-get remove libbladerf-dev
 
 Ensure the bladeRF library isn't in the system:
 
- sudo apt-get install libbladerf-dev
+sudo find / -name "libbladeRF.so"
 
 Go to the step where the dependencies are installed then the step to build libbladerf from source:
 
