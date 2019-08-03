@@ -57,18 +57,21 @@ rx config file=dual.csv format=csv n=8K channel=1,2
 
 rx start
 
-On Matlab Right Click on the produced files single.csv and dual.csv file and use the Import Data tool. You will get table data named 'single'and dual.
+On Matlab Right Click on the produced files single.csv and dual.csv file and use the Import Data tool. You will get table data named 'single'and 'dual'.
 
-The mimo.csv file containing the samples are produced and ported to Matlab, this time you will see the table data containing four columns as opposed to two as before. This is due to having two receive ports each containing inphase and quadrature component totaling to four total components. We are ploting channel 1 output in Matlab again:
+The dual.csv file containing the samples are produced and ported to Matlab, this time you will see the table data containing four columns as opposed to two as before. This is due to having two receive ports each containing inphase and quadrature component totaling to four total components. We are ploting channel 1 output in Matlab again:
 
 Run Matlab script 'ExamineAlternating.m'
 
+GRC Results:
 
 ![GitHub Logo](/Diagrams/GRC_Single_RX_Windows.jpg)
 
 ![GitHub Logo](/Diagrams/GRC_dual_RX1_Windows.jpg)
 
 ![GitHub Logo](/Diagrams/GRC_dual_RX2_Windows.jpg)
+
+BladeRF-cli Results:
 
 ![GitHub Logo](/Diagrams/CLI_Single_RX_Windows.jpg)
 
@@ -85,7 +88,7 @@ sudo make uninstall
 
 Make sure it is uninstalled:
 
-sudo apt-get install libbladerf-dev
+sudo find / -name "libbladeRF.so"
 
 delete any libbladeRF.so library files found.
 
@@ -103,11 +106,15 @@ sudo apt-get install libbladerf-dev
 
 Using the bladeRF-cli and GRC programs, gather the received data the same way done in the 'Examining single and dual rx in Windows' section.
 
+GRC Results:
+
 ![GitHub Logo](/Diagrams/GRC_Single_RX_Linux.jpg)
 
 ![GitHub Logo](/Diagrams/GRC_dual_RX1_Linux.jpg)
 
 ![GitHub Logo](/Diagrams/GRC_dual_RX2_Linux.jpg)
+
+BladeRF-cli Results:
 
 ![GitHub Logo](/Diagrams/CLI_Single_RX_Linux.jpg)
 
