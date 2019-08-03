@@ -132,6 +132,8 @@ Using the bladeRF-cli and GRC programs, gather the received data the same way do
 
 ![GitHub Logo](/Diagrams/CLI_dual_RX2_Linux.jpg)
 
+We conclude that bladeRF-cli program works as expected in dual rx mode when libbladeRF is install using apt-get. Now we examine how bladeRF-cli behaves in dual rx mode when building from source.
+
 ## Building osmosdr from source
 
 When building gr-osmosdr rx/tx source block, cmake looks for the bladerf library, libbladeRF.so, to link and finish compiling. Thus, BladeRF library is build prior to osmosdr. The source code which interfaces osmosdr with the bladerf library is in the gr-osmosdr/lib/bladerf directory. The directory contains an api with functions to access and control the bladerf. This source code can be changed and compiled if needed. 
