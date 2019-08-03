@@ -19,7 +19,7 @@ plot(real(dual_RX_2)); grid on; xlabel("sample"); title("GRC Channel 2: bladerf=
 
 %% BladeRF-CLI single - First import single.csv
 figure(4)
-single1 = single{:,1};
+single1 = single{:,1};   
 single2 = single{:,2};
 plot(single1);
 title('rx config file=samples.csv format=csv n=4k')
@@ -27,7 +27,7 @@ title('rx config file=samples.csv format=csv n=4k')
 %%  BladeRF-CLI dual - First import dual.csv
 figure(5)
 dual1 = dual{:,1};
-dual2 = dual{:,2};
+dual2 = dual{:,2};  
 plot(dual1);
 title('Channel 1: rx config file=dual.csv format=csv n=8K channel=1,2');
 
