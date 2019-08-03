@@ -77,23 +77,6 @@ Run Matlab script 'ExamineAlternating.m'
 ![GitHub Logo](/Diagrams/CLI_dual_RX2_Windows.jpg)
 
 
-
-## Building libbladerf from source --skip this (actually we are uninstalling libbladerf built from source and retesting the apt-get version)
-
-If bladeRF was installed with sudo apt-get, uninstall it with the following command:
-
-sudo apt-get remove bladerf
-
-sudo apt-get remove libbladerf-dev
-
-Ensure the bladeRF library isn't in the system:
-
- sudo apt-get install libbladerf-dev
-
-Go to the step where the dependencies are installed then the step to build libbladerf from source:
-
-https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux
-
 ## If libbladerf was built from source uninstall it and reinstall using apt-get
 
 cd host/build
@@ -133,6 +116,24 @@ Using the bladeRF-cli and GRC programs, gather the received data the same way do
 ![GitHub Logo](/Diagrams/CLI_dual_RX2_Linux.jpg)
 
 We conclude that bladeRF-cli program works as expected in dual rx mode when libbladeRF is install using apt-get. Now we examine how bladeRF-cli behaves in dual rx mode when building from source.
+
+
+## Building libbladerf from source --skip this (testing bladerf-cli on the apt-get version passed, now we test it when building from source)
+
+If bladeRF was installed with sudo apt-get, uninstall it with the following command:
+
+sudo apt-get remove bladerf
+
+sudo apt-get remove libbladerf-dev
+
+Ensure the bladeRF library isn't in the system:
+
+ sudo apt-get install libbladerf-dev
+
+Go to the step where the dependencies are installed then the step to build libbladerf from source:
+
+https://github.com/Nuand/bladeRF/wiki/Getting-Started%3A-Linux
+
 
 ## Building osmosdr from source
 
