@@ -196,11 +196,11 @@ It is found where the tests are passed the tested data works when passed to the 
 
 ![GitHub Logo](/Diagrams/2.jpg)
 
-3 - GRC - Dual RX Mode - apt-get installation (Failed)
+3 - GRC - Dual RX Mode - apt-get installation (Failed - Coarse Recovery Problems)
 
 ![GitHub Logo](/Diagrams/3.jpg)
 
-4 - GRC - Dual RX Mode - installation by source (Failed)
+4 - GRC - Dual RX Mode - installation by source (Failed - Coarse Recovery Problems)
 
 ![GitHub Logo](/Diagrams/4.jpg)
 
