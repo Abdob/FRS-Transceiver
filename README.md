@@ -125,7 +125,7 @@ BladeRF-cli Results:
 We conclude that bladeRF-cli program works as expected in dual rx mode when libbladeRF is install using apt-get. Now we examine how bladeRF-cli behaves in dual rx mode when building from source.
 
 
-## Building libbladerf from source --skip this (testing bladerf-cli on the apt-get version passed, now we test it when building from source)
+## Building libbladerf from source (testing bladerf-cli on the apt-get version passed, now we test it when building from source)
 
 If bladeRF was installed with sudo apt-get, uninstall it with the following command:
 
