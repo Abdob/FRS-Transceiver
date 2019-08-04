@@ -168,6 +168,9 @@ When running the GRC application with the osmosdr source block, debugging inform
 
 [bladeRF source] stop: DEBUG: stopping source
 
+## Initial Setup Conclusions
+
+![GitHub Logo](/Diagrams/intial_setup_table_results.png)
 
 
 
