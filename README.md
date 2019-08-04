@@ -172,7 +172,21 @@ https://github.com/Nuand/bladeRF/tree/master/host/utilities/bladeRF-cli
 
 ## Initial Setup Conclusions
 
+The bladeRF receiver is tested under 8 total combinations of 3 conditons:
+
+1- libbladeRF is installed by source vs installed using apt-get.
+
+2- Receiver is in single RX vs dual RX mode.
+
+3 - Application is GRC vs CLI.
+
+The combinations of the conditions above are listed from 1-8 as shown on the table:
+
 ![GitHub Logo](/Diagrams/intial_setup_table_results.png)
+
+The bladeRF receiver is tested with two waveforms: the FRS waveform and the alternating waveform. The FRS waveform is a high frequency waveform which will test the receivers fine-recovery whereas the alternating waveform waveform is set to a low frequency and will test the receivers coarse-recovery. In order for the test to pass it must pass both the coarse and fine test.
+
+It is found where the tests are passed the tested data works when passed to the FRS GRC application, whereas when the test fails it does not work with FRS GRC application. The CSV files are converted to DAT files in Matlab and subsequently passed to the GRC application with a File source to confirm the tests.
 
 1 - GRC - Single RX Mode - apt-get installation (Pass)
 
