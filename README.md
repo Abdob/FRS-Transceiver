@@ -174,36 +174,35 @@ https://github.com/Nuand/bladeRF/tree/master/host/utilities/bladeRF-cli
 
 ![GitHub Logo](/Diagrams/intial_setup_table_results.png)
 
-
-GRC - Single RX Mode - apt-get installation
+1 - GRC - Single RX Mode - apt-get installation (Pass)
 
 ![GitHub Logo](/Diagrams/1.jpg)
 
-GRC - Single RX Mode - installation by source
+2 - GRC - Single RX Mode - installation by source (Pass)
 
 ![GitHub Logo](/Diagrams/2.jpg)
 
-GRC - Dual RX Mode - apt-get installation
+3 - GRC - Dual RX Mode - apt-get installation (Failed)
 
 ![GitHub Logo](/Diagrams/3.jpg)
 
-GRC - Dual RX Mode - installation by source
+4 - GRC - Dual RX Mode - installation by source (Failed)
 
 ![GitHub Logo](/Diagrams/4.jpg)
 
-CLI - Single RX Mode - apt-get installation
+5 - CLI - Single RX Mode - apt-get installation (Passed)
 
 ![GitHub Logo](/Diagrams/5.jpg)
 
-CLI - Single RX Mode - installation by source
+6 - CLI - Single RX Mode - installation by source (Failed)
 
 ![GitHub Logo](/Diagrams/6.jpg)
 
-CLI - Dual RX Mode - apt-get installation
+7 - CLI - Dual RX Mode - apt-get installation (Passed)
 
 ![GitHub Logo](/Diagrams/7.jpg)
 
-CLI - Dual RX Mode - installation by source
+8 - CLI - Dual RX Mode - installation by source (Failed)
 
 ![GitHub Logo](/Diagrams/8.jpg)
 
