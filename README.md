@@ -172,8 +172,21 @@ When running the GRC application with the osmosdr source block, debugging inform
 
 ![GitHub Logo](/Diagrams/intial_setup_table_results.png)
 
+![GitHub Logo](/Diagrams/1.jpg)
 
+![GitHub Logo](/Diagrams/2.jpg)
 
+![GitHub Logo](/Diagrams/3.jpg)
+
+![GitHub Logo](/Diagrams/4.jpg)
+
+![GitHub Logo](/Diagrams/5.jpg)
+
+![GitHub Logo](/Diagrams/6.jpg)
+
+![GitHub Logo](/Diagrams/7.jpg)
+
+![GitHub Logo](/Diagrams/8.jpg)
 
 https://github.com/Nuand/bladeRF/tree/master/host/utilities/bladeRF-cli
 
