@@ -184,7 +184,7 @@ The combinations of the conditions above are listed from 1-8 as shown on the tab
 
 ![GitHub Logo](/Diagrams/intial_setup_table_results.png)
 
-The bladeRF receiver is tested with two waveforms: the FRS waveform and the alternating waveform. The FRS waveform is a high frequency waveform which will test the receivers fine-recovery whereas the alternating waveform waveform is set to a low frequency and will test the receivers coarse-recovery. In order for the test to pass it must pass both the coarse and fine test.
+The bladeRF receiver is tested with two waveforms: the FRS waveform and the alternating waveform. The FRS waveform is a high frequency waveform which will test the receivers fine-recovery whereas the alternating waveform is set to a low frequency and will test the receivers coarse-recovery. In order for the test to pass it must pass both the coarse and fine test.
 
 It is found where the tests are passed the tested data works when passed to the FRS GRC application, whereas when the test fails it does not work with FRS GRC application. The CSV files are converted to DAT files in Matlab and subsequently passed to the GRC application with a File source to confirm the tests.
 
