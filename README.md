@@ -170,7 +170,7 @@ When running the GRC application with the osmosdr source block, debugging inform
 
 https://github.com/Nuand/bladeRF/tree/master/host/utilities/bladeRF-cli
 
-## Initial Setup Conclusions
+## Including libbladeRF built from source and fine and coarse reception to testing:
 
 The bladeRF receiver is tested under 8 total combinations of 3 conditons:
 
