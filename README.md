@@ -216,7 +216,7 @@ It is found where the tests are passed the tested data works when passed to the 
 
 ![GitHub Logo](/Diagrams/7.jpg)
 
-8 - CLI - Dual RX Mode - installation by source (Failed)
+8 - CLI - Dual RX Mode - installation by source (Failed - Fine Recovery Problem)
 
 ![GitHub Logo](/Diagrams/8.jpg)
 
