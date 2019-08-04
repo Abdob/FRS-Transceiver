@@ -220,6 +220,15 @@ It is found where the tests are passed the tested data works when passed to the 
 
 ![GitHub Logo](/Diagrams/8.jpg)
 
+# Initial Setup Conclusions:
+
+Testing the Linux platform we see bladeRF reciever works in single and dual mode just like the windows platform with CLI program and when libbladeRF is installed through apt-get.  Both linux and windows are experiencing issues with dual recieving on GRC.
+
+Conclusion 1: There is a coarse-receiving issue with gr-osmosdr block.
+
+When building libbladeRF from source CLI experiences a fine-recieving problem on both single and dual RX modes.
+
+Conclusion 2: There is a coarse-receiving issue with cli program only when libbladeRF (including cli itself) is built from source.
 
 
 ## Other Links
