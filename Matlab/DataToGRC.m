@@ -14,7 +14,7 @@ function [] = DataToGRC(filename, data, type)
             % interleave real and imaginary
             rdata = upsample(real(data),2);
             idata = upsample(imag(data),2);
-            data = rdata + [0 idata(1:end-1)];
+            data = single(rdata + [0 idata(1:end-1)]);
             fwrite (f, data , 'float');
     end  
     fclose (f);

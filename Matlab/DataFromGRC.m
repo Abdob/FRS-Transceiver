@@ -16,7 +16,7 @@ function [v] = DataFromGRC(filename,type ,len)
             v = v';
         case 'complex'
             r = fread(f,len,'float');
-            v = r(1:2:end) + j*r(2:2:end);
+            v = single(r(1:2:end)) + j*single(r(2:2:end));
     end
     fclose(f);
 end
