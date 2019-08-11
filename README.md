@@ -286,7 +286,7 @@ tuning mode: 0
 
 # Matching configurations results
 
-![GitHub Logo](/Diagrams/mathcing_configuration_results.png)
+![GitHub Logo](/Diagrams/mathcing_configuration_results)
 
 The fine receiving issue with CLI is resolved with matching configuration. The coarse receiving issue with GRC in dual rx mode is identified:
 
