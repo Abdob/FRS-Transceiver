@@ -168,12 +168,74 @@ When running the GRC application with the osmosdr source block, debugging inform
 
 [bladeRF source] stop: DEBUG: stopping source
 
-
-
-
-
 https://github.com/Nuand/bladeRF/tree/master/host/utilities/bladeRF-cli
 
+## Including libbladeRF built from source and fine and coarse reception to testing:
+
+The bladeRF receiver is tested under 8 total combinations of 3 conditons:
+
+1- libbladeRF is installed by source vs installed using apt-get.
+
+2- Receiver is in single RX vs dual RX mode.
+
+3 - Application is GRC vs CLI.
+
+The combinations of the conditions above are listed from 1-8 as shown on the table:
+
+![GitHub Logo](/Diagrams/intial_setup_table_results.png)
+
+The bladeRF receiver is tested with two waveforms: the FRS waveform and the alternating waveform. The FRS waveform is a high frequency waveform which will test the receivers fine-recovery whereas the alternating waveform is set to a low frequency and will test the receivers coarse-recovery. In order for the test to pass it must pass both the coarse and fine test.
+
+It is found where the tests are passed the tested data works when passed to the FRS GRC application, whereas when the test fails it does not work with FRS GRC application. The CSV files are converted to DAT files in Matlab and subsequently passed to the GRC application with a File source to confirm the tests.
+
+1 - GRC - Single RX Mode - apt-get installation (Pass)
+
+![GitHub Logo](/Diagrams/1.jpg)
+
+2 - GRC - Single RX Mode - installation by source (Pass)
+
+![GitHub Logo](/Diagrams/2.jpg)
+
+3 - GRC - Dual RX Mode - apt-get installation (Failed - Coarse Recovery Problem)
+
+![GitHub Logo](/Diagrams/3.jpg)
+
+4 - GRC - Dual RX Mode - installation by source (Failed - Coarse Recovery Problem)
+
+![GitHub Logo](/Diagrams/4.jpg)
+
+5 - CLI - Single RX Mode - apt-get installation (Passed)
+
+![GitHub Logo](/Diagrams/5.jpg)
+
+6 - CLI - Single RX Mode - installation by source (Failed - Fine Recovery Problem)
+
+![GitHub Logo](/Diagrams/6.jpg)
+
+7 - CLI - Dual RX Mode - apt-get installation (Passed)
+
+![GitHub Logo](/Diagrams/7.jpg)
+
+8 - CLI - Dual RX Mode - installation by source (Failed - Fine Recovery Problem)
+
+![GitHub Logo](/Diagrams/8.jpg)
+
+# Initial Setup Conclusions:
+
+Testing the Linux platform we see bladeRF reciever works in single and dual mode just like the windows platform with CLI program and when libbladeRF is installed through apt-get.  Both linux and windows are experiencing issues with dual recieving on GRC.
+
+Conclusion 1: There is a coarse-receiving issue with gr-osmosdr block.
+
+When building libbladeRF from source CLI experiences a fine-recieving problem on both single and dual RX modes.
+
+Conclusion 2: There is a coarse-receiving issue with cli program only when libbladeRF (including cli itself) is built from source.
+
+# Examining GRC and CLI configurations
+
+To examine the configurations on GRC and CLI we make modifications on the bladerf source. The interface to the bladeRF radio is defined in the header file libbladeRF.h and the function definitions are implemented in the source file bladerf.c . bladerf.c is modified and place here: [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+
+![GitHub Logo](/Diagrams/rx_buffers.jpg)
 
 
 ## Other Links
