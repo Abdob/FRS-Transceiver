@@ -285,10 +285,11 @@ loopback mode: 0
 tuning mode: 0
 
 # Matching configurations results
+The fine receiving issue with CLI is resolved with matching configuration. The coarse receiving issue with GRC in dual rx mode is identified:
 
 ![GitHub Logo](/Diagrams/mathcing_configuration_results)
 
-The fine receiving issue with CLI is resolved with matching configuration. The coarse receiving issue with GRC in dual rx mode is identified:
+It is clear that the receiving is missing every other buffer by looking at the plot below.
 
 ![GitHub Logo](/Diagrams/rx_buffers.jpg)
 
