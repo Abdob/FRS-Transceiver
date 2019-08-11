@@ -234,26 +234,54 @@ Conclusion 2: There is a coarse-receiving issue with cli program only when libbl
 
 To examine the configurations on GRC and CLI we make modifications on the bladerf source. The interface to the bladeRF radio is defined in the header file libbladeRF.h and the function definitions are implemented in the source file bladerf.c . bladerf.c is modified and place [here](https://github.com/Abdob/FRS-Transceiver/blob/master/cpp/bladerf_modified.c). Print statements are placed in the functions where they will be displayed on the terminal as either cli or grc program is running. Of particular interest is the functions: bladerf_sync_config() and bladerf_sync_rx(). Before the aquisition takes place bladerf_sync_config() is called to set the settings of the receiver, the configurations are displayed during this call. bladerf_sync_rx() is the function which does the aquisition and sets a pointer to the buffer containing the rx data.
 
-There were some configuration differences which were found between GRC and CLI. Most were redundant configurations by GRC which were configuring the receiver to values which were already in their default state. One key difference between the two was the length of the buffer set during acquisition. Although both set the buffer size the same during the call to bladerf_sync_config(), GRC limits the buffer size to 4096. During GRC's call to bladerf_sync_rx() varying buffer size less than 4096 are set and acquired whereas the CLI program acquires buffers with the size as defined. We therefore limit the size of the buffer to 4096 and GRC to always acquire this buffer size. 
+There were some configuration differences which were found between GRC and CLI. Most were redundant configurations by GRC which were configuring the receiver to values which were already in their default state. One key difference between the two was the length of the buffer set during acquisition. Although both set the buffer size the same during the call to bladerf_sync_config(), GRC limits the buffer size to 4096. During GRC's call to bladerf_sync_rx() varying buffer size less than 4096 are set and acquired whereas the CLI program acquires buffers with the size as defined. We therefore limit the size of the buffer to 4096 and force GRC to always acquire this buffer size: [grc source](https://github.com/Abdob/FRS-Transceiver/blob/master/cpp/bladerf_source_c_modified.cc) [grc common](https://github.com/Abdob/FRS-Transceiver/blob/master/cpp/bladerf_common_modified.cc) .
+
+Setting the configuration for cli:
+
+rx config file=t.csv format=csv samples=4096 xfers=16 n=32M buffers=32 channel=1,2
+
+Setting the configuration for grc:
+
+bladerf=0,buffers=32,buflen=4096,stream_timeout=1000,transfers=16,nchan=2
+
+Displaying the configurations for both programs show consistent results:
 
 num_buffers: 32
+
 buffer_size: 4096
+
 num_transfers: 16
+
 stream_timeout: 1000
+
 bladerf_channel_layout: 2
+
 bladerf_format: 0
+
 Chan 0 Frequency: 2099999998
+
 Chan 0 rational samplerate: 2000000, 0, 1
+
 Chan 0 bandwidth: 6000000
+
 Chan 0 Gain: 54
+
 Chan 0 Gain Mode: 1
+
 Chan 2 Frequency: 2099999998
+
 Chan 2 rational samplerate: 2000000, 0, 1
+
 Chan 2 bandwidth: 6000000
+
 Chan 2 Gain: 60
+
 Chan 2 Gain Mode: 1
+
 rx mux mode: 0
+
 loopback mode: 0
+
 tuning mode: 0
 
 
