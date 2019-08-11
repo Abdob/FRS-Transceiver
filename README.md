@@ -232,7 +232,8 @@ Conclusion 2: There is a coarse-receiving issue with cli program only when libbl
 
 # Examining GRC and CLI configurations
 
-To examine the configurations on GRC and CLI we make modifications on the bladerf source. The interface to the bladeRF radio is defined in the header file libbladeRF.h and the function definitions are implemented.
+To examine the configurations on GRC and CLI we make modifications on the bladerf source. The interface to the bladeRF radio is defined in the header file libbladeRF.h and the function definitions are implemented in the source file bladerf.c . bladerf.c is modified and place here: [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
 
 ![GitHub Logo](/Diagrams/rx_buffers.jpg)
 
