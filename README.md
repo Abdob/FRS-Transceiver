@@ -230,6 +230,12 @@ When building libbladeRF from source CLI experiences a fine-recieving problem on
 
 Conclusion 2: There is a coarse-receiving issue with cli program only when libbladeRF (including cli itself) is built from source.
 
+# Examining GRC and CLI configurations
+
+To examine the configurations on GRC and CLI we make modifications on the bladerf source. The interface to the bladeRF radio is defined in the header file libbladeRF.h and the function definitions are implemented.
+
+![GitHub Logo](/Diagrams/rx_buffers.jpg)
+
 
 ## Other Links
 
