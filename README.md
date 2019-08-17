@@ -228,7 +228,7 @@ Conclusion 1: There is a coarse-receiving issue with gr-osmosdr block.
 
 When building libbladeRF from source CLI experiences a fine-recieving problem on both single and dual RX modes.
 
-Conclusion 2: There is a coarse-receiving issue with cli program only when libbladeRF (including cli itself) is built from source.
+Conclusion 2: There is a fine-receiving issue with cli program only when libbladeRF (including cli itself) is built from source.
 
 # Examining GRC and CLI configurations
 
@@ -284,8 +284,12 @@ loopback mode: 0
 
 tuning mode: 0
 
+# Matching configurations results
+The fine receiving issue with CLI is resolved with matching configuration. The coarse receiving issue with GRC in dual rx mode is identified:
 
+![GitHub Logo](/Diagrams/mathcing_configuration_results)
 
+It is clear that the receiving is missing every other buffer by looking at the plot below.
 
 ![GitHub Logo](/Diagrams/rx_buffers.jpg)
 
