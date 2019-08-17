@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_2d6ae2c4d08bd48ef2bb20d4ff6a2d2c" kind="dir">
+    <compoundname>bladerf</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="single__rx_8h">single_rx.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/include/bladerf/"/>
+  </compounddef>
+</doxygen>

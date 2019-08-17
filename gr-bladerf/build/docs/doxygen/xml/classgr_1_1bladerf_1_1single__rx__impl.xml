@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1bladerf_1_1single__rx__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::bladerf::single_rx_impl</compoundname>
+    <basecompoundref refid="classgr_1_1bladerf_1_1single__rx" prot="public" virt="non-virtual">gr::bladerf::single_rx</basecompoundref>
+    <includes refid="single__rx__impl_8h" local="no">single_rx_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1bladerf_1_1single__rx__impl_1abcf4a97f16f875b28b55e3e1e4f7f70a" prot="private" static="no" mutable="no">
+        <type>struct bladerf *</type>
+        <definition>struct bladerf* gr::bladerf::single_rx_impl::_dev</definition>
+        <argsstring></argsstring>
+        <name>_dev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/lib/single_rx_impl.h" line="43" column="1" bodyfile="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/lib/single_rx_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1bladerf_1_1single__rx__impl_1a1156c6afd7e69c73be30519c7a98b11e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::bladerf::single_rx_impl::single_rx_impl</definition>
+        <argsstring>()</argsstring>
+        <name>single_rx_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/lib/single_rx_impl.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bladerf_1_1single__rx__impl_1ac13229c87f68258454cd95466a362128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::bladerf::single_rx_impl::~single_rx_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~single_rx_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/lib/single_rx_impl.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1bladerf_1_1single__rx__impl_1af663a8837cf6c00a9ed350eac67c0478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::bladerf::single_rx_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/lib/single_rx_impl.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>gr::bladerf::single_rx_impl</label>
+        <link refid="classgr_1_1bladerf_1_1single__rx__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="6">
+        <label>gr::bladerf::single_rx</label>
+        <link refid="classgr_1_1bladerf_1_1single__rx"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>gr::bladerf::single_rx_impl</label>
+        <link refid="classgr_1_1bladerf_1_1single__rx__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="9">
+        <label>gr::bladerf::single_rx</label>
+        <link refid="classgr_1_1bladerf_1_1single__rx"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/lib/single_rx_impl.h" line="41" column="1" bodyfile="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/lib/single_rx_impl.h" bodystart="40" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgr_1_1bladerf_1_1single__rx__impl_1abcf4a97f16f875b28b55e3e1e4f7f70a" prot="private" virt="non-virtual"><scope>gr::bladerf::single_rx_impl</scope><name>_dev</name></member>
+      <member refid="classgr_1_1bladerf_1_1single__rx_1aa092ed767af2b152a7b0ec6e08c90fe5" prot="public" virt="non-virtual"><scope>gr::bladerf::single_rx_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1bladerf_1_1single__rx__impl_1a1156c6afd7e69c73be30519c7a98b11e" prot="public" virt="non-virtual"><scope>gr::bladerf::single_rx_impl</scope><name>single_rx_impl</name></member>
+      <member refid="classgr_1_1bladerf_1_1single__rx_1ae33608ab0c469d2456a6000291d23f48" prot="public" virt="non-virtual"><scope>gr::bladerf::single_rx_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1bladerf_1_1single__rx__impl_1af663a8837cf6c00a9ed350eac67c0478" prot="public" virt="non-virtual"><scope>gr::bladerf::single_rx_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1bladerf_1_1single__rx__impl_1ac13229c87f68258454cd95466a362128" prot="public" virt="non-virtual"><scope>gr::bladerf::single_rx_impl</scope><name>~single_rx_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

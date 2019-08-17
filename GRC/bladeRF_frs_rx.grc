@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.11'?>
+<?grc format='1' created='3.7.13'?>
 <flow_graph>
   <timestamp>Fri Feb 20 13:31:26 2015</timestamp>
   <block>
@@ -73,12 +73,20 @@
       <value>True</value>
     </param>
     <param>
+      <key>sizing_mode</key>
+      <value>fixed</value>
+    </param>
+    <param>
       <key>thread_safe_setters</key>
       <value></value>
     </param>
     <param>
       <key>title</key>
       <value>FRS Transceiver</value>
+    </param>
+    <param>
+      <key>placement</key>
+      <value>(0,0)</value>
     </param>
   </block>
   <block>
@@ -2597,6 +2605,84 @@
     </param>
   </block>
   <block>
+    <key>bladerf_single_rx</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(88, 1344)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>bladerf_single_rx_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>bladerf_single_rx</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(144, 1192)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>bladerf_single_rx_0_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
     <key>blocks_complex_to_mag_squared</key>
     <param>
       <key>alias</key>
@@ -2663,11 +2749,11 @@
     </param>
     <param>
       <key>file</key>
-      <value>C:\Users\Jevin\Documents\FRSrx.dat</value>
+      <value>/home/foci2/Documents/sdr/gnuradio/gr-osmosdr/build/C:\Users\Jevin\Documents\AltRx.dat</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(216, 1388)</value>
+      <value>(264, 1684)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2693,6 +2779,10 @@
   <block>
     <key>blocks_file_source</key>
     <param>
+      <key>begin_tag</key>
+      <value>pmt.PMT_NIL</value>
+    </param>
+    <param>
       <key>alias</key>
       <value></value>
     </param>
@@ -2710,11 +2800,11 @@
     </param>
     <param>
       <key>file</key>
-      <value>C:\Users\Jevin\Documents\SDR\FRS-Transceiver\GRC\dualFRS1.dat</value>
+      <value>/home/foci2/Documents/sdr/FRS-Transceiver/GRC/dual_RX_2_alt.dat</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(128, 1148)</value>
+      <value>(120, 1052)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2871,7 +2961,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(296, 1632)</value>
+      <value>(376, 1616)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3010,7 +3100,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(208, 1244)</value>
+      <value>(272, 1260)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -5637,7 +5727,7 @@
     </param>
     <param>
       <key>args</key>
-      <value>bladerf=0,buffers=128,buflen=16384,transfers=32</value>
+      <value>bladerf=0,bladerf=0,buffers=32,buflen=4096,stream_timeout=10000,transfers=16</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -5645,7 +5735,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(0, 1240)</value>
+      <value>(0, 1244)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -5764,7 +5854,7 @@
     </param>
     <param>
       <key>bw0</key>
-      <value>0</value>
+      <value>6e6</value>
     </param>
     <param>
       <key>dc_offset_mode0</key>
@@ -7044,7 +7134,7 @@
     </param>
     <param>
       <key>args</key>
-      <value>bladerf=0,nchan=2</value>
+      <value>bladerf=0,buffers=32,buflen=4096,stream_timeout=1000,transfers=16,nchan=2</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -12622,7 +12712,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(224, 1315)</value>
+      <value>(296, 1356)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -12820,6 +12910,18 @@
     </param>
   </block>
   <connection>
+    <source_block_id>bladerf_single_rx_0</source_block_id>
+    <sink_block_id>rx_enable_valve</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>bladerf_single_rx_0_0</source_block_id>
+    <sink_block_id>blocks_throttle_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_complex_to_mag_squared_0</source_block_id>
     <sink_block_id>single_pole_iir_filter_xx_0</sink_block_id>
     <source_key>0</source_key>
@@ -12985,6 +13087,12 @@
     <source_block_id>osmosdr_source_0_0</source_block_id>
     <sink_block_id>rx_enable_valve</sink_block_id>
     <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>osmosdr_source_0_0</source_block_id>
+    <sink_block_id>blocks_file_sink_0</sink_block_id>
+    <source_key>1</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>

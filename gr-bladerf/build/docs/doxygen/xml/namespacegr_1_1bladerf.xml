@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegr_1_1bladerf" kind="namespace" language="C++">
+    <compoundname>gr::bladerf</compoundname>
+    <innerclass refid="classgr_1_1bladerf_1_1single__rx" prot="public">gr::bladerf::single_rx</innerclass>
+    <innerclass refid="classgr_1_1bladerf_1_1single__rx__impl" prot="public">gr::bladerf::single_rx_impl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/include/bladerf/single_rx.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>

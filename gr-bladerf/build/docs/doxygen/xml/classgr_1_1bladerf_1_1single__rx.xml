@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1bladerf_1_1single__rx" kind="class" language="C++" prot="public">
+    <compoundname>gr::bladerf::single_rx</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1bladerf_1_1single__rx__impl" prot="public" virt="non-virtual">gr::bladerf::single_rx_impl</derivedcompoundref>
+    <includes refid="single__rx_8h" local="no">single_rx.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1bladerf_1_1single__rx_1ae33608ab0c469d2456a6000291d23f48" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1bladerf_1_1single__rx" kindref="compound">single_rx</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;single_rx&gt; gr::bladerf::single_rx::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/include/bladerf/single_rx.h" line="39" column="1" bodyfile="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/include/bladerf/single_rx.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1bladerf_1_1single__rx_1aa092ed767af2b152a7b0ec6e08c90fe5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1bladerf_1_1single__rx_1ae33608ab0c469d2456a6000291d23f48" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::bladerf::single_rx::make</definition>
+        <argsstring>()</argsstring>
+        <name>make</name>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1bladerf_1_1single__rx" kindref="compound">bladerf::single_rx</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1bladerf_1_1single__rx" kindref="compound">bladerf::single_rx</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1bladerf_1_1single__rx_1aa092ed767af2b152a7b0ec6e08c90fe5" kindref="member">bladerf::single_rx::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/include/bladerf/single_rx.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::bladerf::single_rx_impl</label>
+        <link refid="classgr_1_1bladerf_1_1single__rx__impl"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="0">
+        <label>gr::bladerf::single_rx</label>
+        <link refid="classgr_1_1bladerf_1_1single__rx"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="3">
+        <label>gr::bladerf::single_rx</label>
+        <link refid="classgr_1_1bladerf_1_1single__rx"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/include/bladerf/single_rx.h" line="37" column="1" bodyfile="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/include/bladerf/single_rx.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1bladerf_1_1single__rx_1aa092ed767af2b152a7b0ec6e08c90fe5" prot="public" virt="non-virtual"><scope>gr::bladerf::single_rx</scope><name>make</name></member>
+      <member refid="classgr_1_1bladerf_1_1single__rx_1ae33608ab0c469d2456a6000291d23f48" prot="public" virt="non-virtual"><scope>gr::bladerf::single_rx</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

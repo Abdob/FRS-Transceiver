@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libgnuradio-bladerf-1.0.0git.so.0.0.0 -o libgnuradio-bladerf-1.0.0git.so.0.0.0 CMakeFiles/gnuradio-bladerf.dir/single_rx_impl.cc.o  -L/usr/local/lib -Wl,-rpath,/usr/local/lib: -lboost_filesystem -lboost_system /usr/local/lib/libgnuradio-runtime.so /usr/local/lib/libgnuradio-pmt.so /usr/local/lib/liblog4cpp.so -lbladeRF 

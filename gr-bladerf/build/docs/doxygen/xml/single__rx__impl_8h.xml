@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="single__rx__impl_8h" kind="file" language="C++">
+    <compoundname>single_rx_impl.h</compoundname>
+    <includes refid="single__rx_8h" local="no">bladerf/single_rx.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">libbladeRF.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="25">
+        <label>stdlib.h</label>
+      </node>
+      <node id="19">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="18">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="26">
+        <label>string.h</label>
+      </node>
+      <node id="15">
+        <label>single_rx_impl.h</label>
+        <link refid="single__rx__impl_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>unistd.h</label>
+      </node>
+      <node id="16">
+        <label>bladerf/single_rx.h</label>
+        <link refid="single__rx_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>time.h</label>
+      </node>
+      <node id="20">
+        <label>iostream</label>
+      </node>
+      <node id="24">
+        <label>stdio.h</label>
+      </node>
+      <node id="17">
+        <label>bladerf/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>libbladeRF.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1bladerf_1_1single__rx__impl" prot="public">gr::bladerf::single_rx_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1bladerf">gr::bladerf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/foci2/Documents/sdr/FRS-Transceiver/gr-bladerf/lib/single_rx_impl.h"/>
+  </compounddef>
+</doxygen>
