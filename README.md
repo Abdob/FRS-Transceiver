@@ -6,6 +6,10 @@ A quick fix is provided in this part along with the reason why it works. Afterwa
 
 ## Quick Fix and why it works
 
+[Change bladerf_source_c.cc and rebuild gr-osmosdr](https://github.com/Abdob/FRS-Transceiver/blob/master/cpp/bladerf_source_c_fix.cc)
+
+
+
 1st fix - allocate memory needed for Dual RX
 
   _16icbuf = reinterpret_cast<int16_t *>(volk_malloc(4*_samples_per_buffer*sizeof(int16_t), alignment));
