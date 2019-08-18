@@ -6,3 +6,15 @@ A quick fix is provided in this part along with the reason why it works. Afterwa
 
 ## Quick Fix and why it works
 
+for (size_t i = 0; i < noutput_items; ++i) {
+
+	float real = (float)_16icbuf[4*i]/SCALING_FACTOR;
+	float imag = (float)_16icbuf[4*i+1]/SCALING_FACTOR;
+        out[0][i] = gr_complex(real,imag);
+
+	real = (float)_16icbuf[4*i+2]/SCALING_FACTOR;
+	imag = (float)_16icbuf[4*i+3]/SCALING_FACTOR;
+        out[1][i] = gr_complex(real,imag);
+
+
+}
