@@ -5,8 +5,7 @@ On [PART1](https://github.com/Abdob/FRS-Transceiver/blob/master/README_PART1.md)
 A quick fix is provided in this part along with the reason why it works. Afterwards a more ellaborate process which led to the solution is described.
 
 ## Quick Fix and why it works
-
-for (size_t i = 0; i < noutput_items; ++i) {
+    for (size_t i = 0; i < noutput_items; ++i) {
 
 	float real = (float)_16icbuf[4*i]/SCALING_FACTOR;
 	float imag = (float)_16icbuf[4*i+1]/SCALING_FACTOR;
@@ -17,4 +16,4 @@ for (size_t i = 0; i < noutput_items; ++i) {
         out[1][i] = gr_complex(real,imag);
 
 
-}
+    }
